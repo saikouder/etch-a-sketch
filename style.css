@@ -1,9 +1,15 @@
 body {
     background-color: palevioletred;
 }
-#grid-container {
+#gridContainer {
     display: flex;
     background-color: black;
     min-width: 300px;
     min-height: 100px;
-}  
+}
+
+.tile {
+    background-color: white;
+    min-height: 20px;
+    min-width: 20px;
+}
