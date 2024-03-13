@@ -3,13 +3,22 @@ body {
 }
 #gridContainer {
     display: flex;
-    background-color: black;
-    min-width: 300px;
-    min-height: 100px;
+    flex-direction: column;
+    background-color: grey;
+    min-width: 1000px;
+    min-height: 1000px;
+    gap: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-row {
+    display: flex;
+    min-width: 1000px;
 }
 
 .tile {
     background-color: white;
-    min-height: 20px;
-    min-width: 20px;
+    height: 40px;
+    width: 40px;
 }
