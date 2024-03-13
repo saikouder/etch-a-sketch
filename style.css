@@ -1,3 +1,9 @@
-.grid-container {
-    display: flex;
+body {
+    background-color: palevioletred;
 }
+#grid-container {
+    display: flex;
+    background-color: black;
+    min-width: 300px;
+    min-height: 100px;
+}  
