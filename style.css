@@ -1,6 +1,18 @@
 body {
     background-color: palevioletred;
 }
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.customization-buttons {
+    display:flex;
+    gap: 20px;
+}
+
 #gridContainer {
     display: flex;
     flex-direction: column;
