@@ -14,7 +14,10 @@ function createGrid(tilesPerRow = 16) {
 }
 
 function resetGrid() {
-    let gridSideLength = Number(prompt("How many tiles per row & column?", "20"));
+    let gridSideLength = Number(prompt("How many tiles per row & column? (max is 60)", "20"));
+    if (gridSideLength > 60) {
+        gridSideLength = 60;
+    }
     let usedGrid = document.getElementById("gridContainer");
     usedGrid.innerHTML = "";
     createGrid(gridSideLength);
