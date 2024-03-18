@@ -1,36 +1,56 @@
 body {
     background-color: palevioletred;
+    margin: 0;
+}
+
+#page-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .button-container {
     display: flex;
-    justify-content: space-around;
-    margin: 15px;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    margin-top: 15px;
+    min-height: 40px;
+    gap: 50px;
 }
 
 .customization-buttons {
     display:flex;
-    gap: 20px;
+    gap: 10px;
 }
+
 
 #gridContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: grey;
-    min-width: 1000px;
-    min-height: 1000px;
+    width: 80vw;
+    height: 80vh;
+    max-height: 1000px;
     gap: 0px;
-    margin: 0;
-    padding: 0;
+    padding: 2%;
+}
+
+.row-wrapper {
+    max-width: 1000px;
+    min-height: 0;
+    margin: 0 auto;
 }
 
 .grid-row {
     display: flex;
-    min-width: 1000px;
+    flex-shrink: 1;
 }
 
 .tile {
     background-color: white;
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
+    flex-shrink: 1;
 }
