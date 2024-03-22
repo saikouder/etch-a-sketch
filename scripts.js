@@ -7,13 +7,13 @@ function createGrid(tilesPerRow) {
     
     tileSize = 640 / tilesPerRow;
 
-    for (let i=1; i<tilesPerRow; i++) {
+    for (let i=0; i<tilesPerRow; i++) {
         let newTileWrapper = document.createElement("div");
         newTileWrapper.setAttribute("class", "row-wrapper");
         let newTileRow = document.createElement("div");
         newTileRow.setAttribute("class", "grid-row");
-        console.log(newTileRow);
-        for (let i=1; i<tilesPerRow; i++) {
+        
+        for (let i=0; i<tilesPerRow; i++) {
             let newTile = document.createElement("div");
             newTile.setAttribute("class", "tile");
             newTile.style.width = `${tileSize}px`;
