@@ -3,10 +3,28 @@ body {
     margin: 0;
 }
 
+.header {
+    width: 100%;
+    background-color: rgb(173, 53, 93);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #0ed593;
+}
+
+h1 {
+    margin: 6px auto;
+}
+
+
 #page-container {
     display:flex;
     flex-direction: column;
     align-items: center;
+}
+
+#main-content {
+    background-color: rgb(196, 87, 123);
 }
 
 .button-container {
