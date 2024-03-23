@@ -1,7 +1,6 @@
 @font-face {
-    font-family: blox-brkregular;
-    src: url("resources/blox-brk/blox2-webfont.woff2") format("woff2"),
-         url("resources/blox-brk/blox2-webfont.woff") format("woff");
+    font-family: BitmGothic;
+    src: url("resources/BitmGothic/BitmGothic.woff") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -23,7 +22,7 @@ body {
 h1 {
     margin-bottom: 4px;
     margin-top: 12px;
-    font-family: "blox-brkregular";
+    font-family: "BitmGothic";
 }
 
 
