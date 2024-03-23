@@ -1,3 +1,11 @@
+@font-face {
+    font-family: blox-brkregular;
+    src: url("resources/blox-brk/blox2-webfont.woff2") format("woff2"),
+         url("resources/blox-brk/blox2-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: palevioletred;
     margin: 0;
@@ -7,13 +15,15 @@ body {
     width: 100%;
     background-color: rgb(173, 53, 93);
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 30px;
     color: #0ed593;
 }
 
 h1 {
-    margin: 6px auto;
+    margin-bottom: 4px;
+    margin-top: 12px;
+    font-family: "blox-brkregular";
 }
 
 
