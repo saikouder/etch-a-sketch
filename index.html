@@ -15,7 +15,25 @@
 
         <div id="main-content">
             <div class="button-container">
-                <div class="reset-button-wrapper" onclick="resetGrid()"><button>Reset Grid</button></div>
+                <input
+                    type="radio"
+                    id="black-and-white"
+                    name="color-selection"
+                    value="Black & White"
+                >
+                <label for="black-and-white">Black & White</label>
+
+                <input
+                    type="radio"
+                    id="rainbow"
+                    name="color-selection"
+                    value="Rainbow"
+                >
+                <label for="rainbow">Rainbow</label>
+
+                <div class="reset-button-wrapper" onclick="resetGrid()">
+                    <button>Reset Grid</button>
+                </div>
             
                 <div class="customization-buttons">
                     <div class="colors-button-wrapper"><button>Random Colors</button></div>
