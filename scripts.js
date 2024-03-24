@@ -1,6 +1,7 @@
 
 let tilesPerRow = 16;
 let tileSize = 0;
+let fillOption = "default"
 
 
 function createGrid(tilesPerRow) {
@@ -35,12 +36,21 @@ function resetGrid() {
     usedGrid.innerHTML = "";
     createGrid(gridSideLength);
 }
+
 function fillSquare() {
-    this.style.backgroundColor = "black";
+    let color = colorModeSelection();
+    this.style.backgroundColor = color;
 }
 
-// function fillSquare(rv = 0, gv = 0, bv = 0) {
-//     this.style.backgroundColor = `rgb(${rv}, ${gv}, ${bv})`;
-// }
+function colorModeSelection() {
+    if (document.getElementById("rainbow").checked) {
+        let rv = Math.round(Math.random() * 255);
+        let gv = Math.round(Math.random() * 255);
+        let bv = Math.round(Math.random() * 255);
+        return `rgb(${rv},${gv},${bv})`;
+    } else {
+        return "rgb(0,0,0)";
+    }
+}
 
 createGrid(tilesPerRow);
