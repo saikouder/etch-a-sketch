@@ -7,17 +7,17 @@
 
 
 body {
-    background-color: palevioletred;
+    background-color: rgb(83, 152, 232);
     margin: 0;
 }
 
 .header {
     width: 100%;
-    background-color: rgb(173, 53, 93);
     text-align: center;
     font-size: 32px;
     margin-bottom: 30px;
-    color: #0ed593;
+    color: #c9ebe0;
+    padding-top: 15px;
 }
 
 h1 {
@@ -34,21 +34,24 @@ h1 {
 }
 
 #main-content {
-    background-color: rgb(196, 87, 123);
+    background-color: rgb(16, 168, 64);
+    border-radius: 25px;
 }
 
 .button-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
     margin-top: 15px;
     min-height: 20px;
-    gap: 50px;
+    gap: 30px;
+    padding: 0 20px;
 }
 
 .radio-wrapper {
     font-family: "BitmGothic";
-    font-size: 30px;
+    font-size: 24px;
 }
 
 input[type="radio"]:checked + .rainbow-label {
@@ -56,13 +59,26 @@ input[type="radio"]:checked + .rainbow-label {
     #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
 }
 
+.reset-button {
+    background-color: black;
+    color: white;
+}
+
+.reset-button:hover {
+  background-color: #4f4141;
+}
+
+.reset-button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
 
 #gridContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: rgb(245, 59, 59);
     width: 640px;
     height: 640px;
     gap: 0px;
